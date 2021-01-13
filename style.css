@@ -13,6 +13,7 @@ nav {
     font-family: 'Roboto Slab';
     padding: 20px;
 }
+
 body {
     background: rgb(250,238,238);
     font-family: 'Roboto Slab'
@@ -71,6 +72,7 @@ body {
     margin-left: 15px;
 }
 
+
 .info h2 {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -85,7 +87,6 @@ body {
     display: inline-grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
     grid-column-gap: 50px;
     justify-content: space-evenly;
     
@@ -202,4 +203,15 @@ body {
     .profile-picture {
         width: 100%;
     }
+
+    .education {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
 }
