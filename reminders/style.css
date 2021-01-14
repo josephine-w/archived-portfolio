@@ -3,66 +3,10 @@ body {
     min-width: 250px;
 }
 
-* {
-    box-sizing:border-box;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #fad7d7;
-    font-size: 18px;
-    transition: 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-ul li:hover {
-    background: #fcd0d0;
-}
-
-ul li.checked {
-    background: #ddb4b4;
-    color: #fff;
-}
-
-ul li.checked::after {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-}
-
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-    background-color: #fad2d2;
-    color: white
-}
-
 .header {
+    padding: 50px 50px;
     font-family: 'Roboto Slab';
     background-color:#e9b0b0;
-    padding: 30px 40px;
     color: white;
     text-align: center;
 }
@@ -74,6 +18,7 @@ ul li.checked::after {
 }
 
 input {  
+    font-family: 'Roboto Slab';
     border: none;
     border-radius: 0;
     margin: 0;
@@ -83,19 +28,44 @@ input {
     float: center;  
 }
 
-.text {
-    font-family: 'Roboto Slab';
-}
-
 .addButton {
     width: 50%;
+    padding: 10px;
     background:#ecd0d0;
     color: white;
-    padding: 10px;
+    
     cursor: pointer;
 }
 
 .addButton:hover {
     background-color:#f0caca
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Roboto Slab';
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    background: #fad7d7;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    padding: 10px 16px 10px 16px;
+}
+
+.close:hover {
+    background-color: #fad2d2;
+    color: white
 }
 
