@@ -291,7 +291,8 @@ section {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text {
+.skills .skills-content .left .text,
+.skills .skills-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -299,21 +300,26 @@ section {
 }
 
 
+.skills .skills-content .left .bars,
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
 }
 
+.skills .skills-content .left .info,
 .skills .skills-content .right .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.skills .skills-content .left span,
 .skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
 
+
+.skills .skills-content .left .line,
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
@@ -321,6 +327,7 @@ section {
     position: relative;
 }
 
+.skills .skills-content .left .line::before,
 .skills .skills-content .right .line::before {
     content: "";
     position: absolute;
@@ -348,6 +355,23 @@ section {
     width: 35%;
     background: #afc9eb;
 }
+
+.skills .skills-content .left .msuite::before {
+    width: 70%;
+    background: #afc9eb;
+}
+
+.skills .skills-content .left .vscode::before {
+    width: 45%;
+    background: #8098b8;
+}
+
+.skills .skills-content .left .pycharm::before {
+    width: 40%;
+    background: #afc9eb;
+}
+
+
 
 
 /* responsive media query start */
