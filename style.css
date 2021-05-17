@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -262,10 +262,13 @@
     /* about */
     
     .about .about-content .left img {
-        height: 400px;
-        width: 400px;
+        width: 80%;
+        height: auto;
         object-fit: cover;
         border-radius: 50%;
+        display: inline-flex;
+        padding-right: 10px;
+        margin-top: 2vw;
     }
     
     .about .about-content .left {
@@ -274,12 +277,14 @@
     
     .about .about-content .right {
         width: 55%;
+        display: inline;
+        padding-left: calc(2px + .1vw);
     }
     
     .about .about-content .right .text {
-        font-size: 25px;
+        font-size: calc(20px + .2vw);
         font-weight: 600;
-        margin-bottom: 10px;
+        margin-bottom: 1vw;
     }
     
     .about .about-content .right .text span {
@@ -288,10 +293,11 @@
     
     .about .about-content .right p {
         text-align: justify;
+        font-size: calc(11px + .5vw);
     }
     
     .about .about-content .right a {
-        display: inline-block;
+        display: inline-flex;
         background: #8098b8;
         color: white;
         font-size: 25px;
@@ -306,12 +312,14 @@
     .about .about-content .right a:hover {
         color: #8098b8;
         background: none;
+        display: inline-flex;
     }
     /* skills */
     
     .skills .skills-content .column {
         padding: 30px;
         width: calc(50% - 30px);
+        display: inline; 
     }
     
     .skills .skills-content .left .text,
@@ -327,7 +335,6 @@
     .skills .skills-content .left .software,
     .skills .skills-content .left .bars {
         position: relative;
-        top: -25px;
     }
     
     .skills .skills-content .left .bars,
@@ -368,7 +375,7 @@
     }
     
     .skills .skills-content .right .python::before {
-        width: 80%;
+        width: 65%;
         background: #8098b8;
     }
     
@@ -378,12 +385,12 @@
     }
     
     .skills .skills-content .right .htmlcss::before {
-        width: 70%;
+        width: 50%;
         background: #8098b8;
     }
     
     .skills .skills-content .right .js::before {
-        width: 35%;
+        width: 20%;
         background: #afc9eb;
     }
     
@@ -391,15 +398,20 @@
         width: 70%;
         background: #afc9eb;
     }
+
+    .skills .skills-content .left .gsuite::before {
+        width: 80%;
+        background: #8098b8;
+    }
     
     .skills .skills-content .left .vscode::before {
         width: 45%;
-        background: #8098b8;
+        background: #afc9eb;
     }
     
     .skills .skills-content .left .pycharm::before {
         width: 40%;
-        background: #afc9eb;
+        background: #8098b8;
     }
     /* background */
     
@@ -648,6 +660,7 @@
         .timeline__event__date {
             border-radius: 0;
             padding: 20px;
+            font-size: small;
         }
         .timeline__event:nth-child(2n+1) {
             flex-direction: column;
@@ -656,6 +669,7 @@
         .timeline__event:nth-child(2n+1) .timeline__event__date {
             border-radius: 0;
             padding: 20px;
+            font-size: small;
         }
         .timeline__event:nth-child(2n+1) .timeline__event__icon {
             border-radius: 6px 6px 0 0;
@@ -733,19 +747,21 @@
             margin-left: 0px;
         }
         .about .about-content .column {
-            width: 100%;
+            width: 50%;
         }
         .about .about-content .left {
-            display: flex;
             justify-content: center;
             margin: 0 auto 60px;
+            display: inline-flex;
         }
     }
     
     @media (max-width: 1104px) {
         .about .about-content .left img {
-            height: 350px;
-            width: 350px;
+            height: auto;
+            display: inline;
+            width: 100%;
+
         }
     }
     

@@ -12,21 +12,7 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
-    // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-    });
-
-    // typing animation
-    var typed = new Typed(".typing", {
-        strings: ["a student.", "a developer.", "an artist.", "a learner.",],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    })
-
-
+    
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
