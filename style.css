@@ -287,7 +287,7 @@
         margin-bottom: 1vw;
     }
     
-    .about .about-content .right .text span {
+    .about .about-content .right .text span a{
         color: #8098b8;
     }
     
@@ -296,7 +296,7 @@
         font-size: calc(11px + .5vw);
     }
     
-    .about .about-content .right a {
+    .about .about-content .right .resume-button a {
         display: inline-flex;
         background: #8098b8;
         color: white;
@@ -309,7 +309,7 @@
         transition: all 0.3s ease;
     }
     
-    .about .about-content .right a:hover {
+    .about .about-content .right .resume-button a:hover {
         color: #8098b8;
         background: none;
         display: inline-flex;
