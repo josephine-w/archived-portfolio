@@ -638,6 +638,59 @@
     .timeline__event:last-child .timeline__event__icon:before {
         content: none;
     }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        align-items: center;
+        background-color: #8098b8;
+        color: #ffff;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        transition: all 0.4s ease;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        margin: 20px 0;
+        
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ffff;
+        border: 2px solid #8098b8;
+        color: #8098b8
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accordion:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f078";
+        padding-right: 3px;
+        float: right;
+        font-weight: 900;
+      }
+      
+      .active:after {
+        font-family: "Font Awesome 5 Free";
+        padding-right: 3px;
+        float: right;
+        font-weight: 900;
+        content: "\f077"; /* Unicode character for "minus" sign (-) */
+      }
     
     @media (max-width: 786px) {
         .timeline__event {
