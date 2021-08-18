@@ -6,11 +6,6 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
 
         }
-        if(this.scroll > 500){
-            $('.scroll-up-btn').addClass("show");
-        } else {
-            $('.scroll-up-btn').removeClass("show");
-        }
     });
     
     // toggle menu/navbar script
@@ -19,4 +14,3 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 });
-
