@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
@@ -307,9 +308,7 @@ section {
 }
 
 .skills .skills-content .left .text,
-.skills .skills-content .right .text,
-.background .background-content .left .text,
-.background .background-content .right .text {
+.skills .skills-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -327,9 +326,7 @@ section {
 }
 
 .skills .skills-content .left .info,
-.skills .skills-content .right .info,
-.background .background-content .left .place,
-.background .background-content .right .place {
+.skills .skills-content .right .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -409,13 +406,10 @@ section {
 }
 /* background */
 
-.background {
-    font-size: 14px;
-}
-
 .background ul {
-    list-style-type: none;
     font-size: 14px;
+    margin-left: 25px;
+    list-style-type: circle;
 }
 
 .background a {
