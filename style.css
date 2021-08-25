@@ -91,13 +91,17 @@ body {
 }
 
 /* cute */
+
 .cinnamoroll img {
     position: fixed;
+    display: inline-block;
     right: -110px;
     bottom: 10px;
     z-index: -2;
-    width:350px
+    width:350px;
 }
+
+
 /* menu button */
 
 .menu-btn {
