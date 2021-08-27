@@ -360,7 +360,7 @@ section {
 }
 
 .skills .skills-content .right .python::before {
-    width: 95%;
+    width: 90%;
     background: #8098b8;
 }
 
@@ -375,7 +375,7 @@ section {
 }
 
 .skills .skills-content .right .css::before {
-    width: 40%;
+    width: 60%;
     background: #afc9eb;
 }
 
