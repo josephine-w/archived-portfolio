@@ -872,12 +872,6 @@ section {
     .max-width {
         max-width: 800px;
     }
-
-    .gallery {
-        flex-direction: column;
-        align-self: center;
-    }
-
     .about .about-content .right {
         flex: 100%;
     }
@@ -906,7 +900,10 @@ section {
       flex: 100%;
       max-width: 100%;
     }
-    
+    .gallery {
+        flex-direction: column;
+        align-self: center;
+    }
   }
 
 @media (max-width: 500px) {
