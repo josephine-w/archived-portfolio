@@ -385,7 +385,7 @@ section {
 }
 
 .skills .skills-content .left .msuite::before {
-    width: 80%;
+    width: 90%;
     background: #998ca8;
 }
 
@@ -394,8 +394,8 @@ section {
     background: #E5D6F6;
 }
 
-.skills .skills-content .left .pycharm::before {
-    width: 90%;
+.skills .skills-content .left .django::before {
+    width: 40%;
     background: #998ca8;
 }
 
