@@ -757,11 +757,7 @@ section {
 /* responsive media query start */
 
 @media (max-width: 1500px) {
-    .gallery {width:100%}
-    .box {
-      flex: 50%;
-      max-width: 50%;
-    }
+    .gallery {width:75%}
   }
 
 @media (max-width: 1450px) {
@@ -823,7 +819,6 @@ section {
         height: auto;
         display: inline;
         width: 100%;
-
     }
 }
 
