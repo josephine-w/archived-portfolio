@@ -305,53 +305,78 @@ section {
 }
 /* skills */
 
-.skills .skills-content .column {
-    padding: 30px;
-    width: calc(50% - 30px);
-    display: inline; 
-}
+.skills .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+.skills .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.skills .skills-content .left .text,
-.skills .skills-content .right .text {
+.collapsible {
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
-.skills .skills-content .left .software,
-.skills .skills-content .left .bars {
-    position: relative;
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
-.skills .skills-content .left .bars,
-.skills .skills-content .right .bars {
+.active:after {
+    content: "\2212";
+ }
+
+.skills .content {
+    padding: 0 20px;
+    width: 50%;
+    margin: 0 auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.bars {
+    width:100%;
     margin-bottom: 15px;
 }
 
-.skills .skills-content .left .info,
-.skills .skills-content .right .info {
+.info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-content .left span,
-.skills .skills-content .right span {
+.skills span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .skills-content .left .line,
-.skills .skills-content .right .line {
+.skills .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 
-.skills .skills-content .left .line::before,
-.skills .skills-content .right .line::before {
+.skills .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -359,54 +384,119 @@ section {
     top: 0;
 }
 
-.skills .skills-content .right .python::before {
+.skills .python::before {
     width: 95%;
     background: #998ca8;
 }
 
-.skills .skills-content .right .c::before {
+.skills .c::before {
     width: 75%;
     background: #E5D6F6;
 }
 
-.skills .skills-content .right .html::before {
+.skills .html::before {
     width: 90%;
     background: #998ca8;
 }
 
-.skills .skills-content .right .css::before {
+.skills .css::before {
     width: 60%;
     background: #E5D6F6;
 }
 
-.skills .skills-content .right .js::before {
-    width: 40%;
+.skills .js::before {
+    width: 60%;
     background: #998ca8;
 }
 
-.skills .skills-content .left .msuite::before {
-    width: 90%;
-    background: #998ca8;
-}
-
-.skills .skills-content .left .vscode::before {
+.skills .sql::before {
     width: 80%;
     background: #E5D6F6;
 }
 
-.skills .skills-content .left .django::before {
+.skills .r::before {
+    width: 70%;
+    background: #998ca8;
+}
+
+.skills .msuite::before {
+    width: 90%;
+    background: #998ca8;
+}
+
+.skills .vscode::before {
+    width: 80%;
+    background: #E5D6F6;
+}
+
+.skills .django::before {
     width: 40%;
     background: #998ca8;
 }
 
-.skills .skills-content .left .aws::before {
+.skills .heroku::before {
     width: 30%;
     background: #E5D6F6;
 }
 
-.skills .skills-content .left .jira::before {
+.skills .pandas::before {
+    width: 75%;
+    background: #998ca8;
+}
+
+.skills .numpy::before {
+    width: 50%;
+    background: #E5D6F6;
+}
+
+.skills .bs::before {
+    width: 60%;
+    background: #998ca8;
+}
+
+.skills .mysql::before {
+    width: 40%;
+    background: #E5D6F6;
+}
+
+.skills .sns::before {
+    width: 35%;
+    background: #998ca8;
+}
+
+.skills .mpl::before {
+    width: 35%;
+    background:#E5D6F6 ;
+}
+
+.skills .scikit::before {
+    width: 55%;
+    background: #998ca8;
+}
+
+.skills .aws::before {
+    width: 30%;
+    background: #E5D6F6;
+}
+
+.skills .jira::before {
     width: 40%;
     background: #998ca8;
+}
+
+.skills .conf::before {
+    width: 80%;
+    background: #998ca8;
+}
+
+.skills .powerbi::before {
+    width:75%;
+    background: #998ca8;
+}
+
+.skills .git::before {
+    width: 45%;
+    background: #E5D6F6;
 }
 /* background */
 
